@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@color/primary_blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_relay"
+            android:background="@drawable/bg_relay_off"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/tvRelayName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relay 1"
+            style="@style/TextAppearance.App.Body"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OFF"
+            android:textColor="@color/accent_red"
+            android:layout_marginTop="4dp"/>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchRelay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:thumbTint="@color/primary_neon"
+            android:trackTint="@color/gray_medium"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

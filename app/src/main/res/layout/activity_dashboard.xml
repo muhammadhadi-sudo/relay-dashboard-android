@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <!-- Judul Halaman -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DASHBOARD MONITORING"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Kartu Status Relay -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F5F5F5"
+        android:padding="20dp"
+        android:layout_marginBottom="30dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status Relay"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvStatusRelay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mati"
+            android:textSize="22sp"
+            android:textColor="#D32F2F"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+
+    <!-- Tombol Kontrol -->
+    <Button
+        android:id="@+id/btnNyalakan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NYALAKAN RELAY"
+        android:backgroundTint="#2E7D32"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnMatikan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MATIKAN RELAY"
+        android:backgroundTint="#C62828"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Tombol Logout -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KELUAR"
+        android:backgroundTint="#757575"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>
